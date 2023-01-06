@@ -4,6 +4,7 @@ function Contact() {
   return (
     <div>this is my contact</div>
   )
-}
+};
 
-export default Contact
+
+export default Contact;
