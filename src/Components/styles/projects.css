@@ -1,0 +1,42 @@
+.title {
+  text-align: center;
+  font-weight: 600;
+  color: #000;
+  margin-bottom: 10px;
+}
+.scrollable-div {
+  display: flex;
+  gap: 20px;
+  padding: 15px;
+  width: 100%;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  white-space: nowrap;
+}
+
+.scrollable-div::-webkit-scrollbar {
+  display: none;
+}
+
+/* .project-card {
+  padding: 10px;
+  border: 1px solid rgb(211, 205, 205);
+  border-radius: 10px;
+  display: grid;
+  grid-template-columns: repeat(2 , 1fr);
+  grid-gap: 5px;
+} */
+.project-image {
+  border-radius: 14px;
+}
+
+@media screen and (max-width:700px) {
+  .project-card {
+    display: flex;
+    flex-direction: column;
+  }
+  .scrollable-div {
+    flex-direction: column;
+    overflow: unset;
+  }
+}
