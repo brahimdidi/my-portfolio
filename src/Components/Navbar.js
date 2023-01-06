@@ -7,8 +7,17 @@ function Navbar() {
   let activeStyle = { textDecoration: "underline",textDecorationColor: "red"};
   return (
     <header className='header'>
-      <img className='logo' src={logo}/>
+      <img className='logo' src={logo} onClick = {() => window.location.reload} />
       <ul className='nav'>
+          <NavLink
+            to="/"
+            className= "nav-link"
+            style={({ isActive }) =>
+              isActive ? activeStyle : undefined
+            }
+          >
+            Home
+          </NavLink>
           <NavLink
             to="projects"
             className= "nav-link"
