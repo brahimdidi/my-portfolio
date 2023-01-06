@@ -26,4 +26,7 @@
   .nav {
   
   }
+  .nav-link {
+    font-size: unset;
+  }
 }
